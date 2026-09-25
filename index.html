@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Sanchez — Diario Visual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="album-texture"></div>
+
+    <div class="container">
+        <header class="album-header">
+            <div class="header-details">
+                <span class="editorial-tag">VOL. 01 / COLECCIÓN PERSONAL</span>
+                
+            </div>
+            <h1 class="album-title">OMAR SANCHEZ</h1>
+            <p class="album-subtitle">“Fragmentos de momentos que decidí conservar.”</p>
+            <div class="header-divider"></div>
+        </header>
+
+        <main class="album-content">
+    <!-- Primera Galería Principal -->
+    <section class="album-gallery" id="gallery-main"></section>
+
+    <!-- Separador y Subtítulo de la Nueva Sección -->
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <h2 class="section-subtitle">Fotos que encontré en mi galería</h2>
+        <p class="section-description">Recuerdos espontáneos.</p>
+    </div>
+
+    <!-- Segunda Galería -->
+    <section class="album-gallery" id="gallery-secondary"></section>
+</main>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <div class="lightbox-overlay" id="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+            <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Anterior">&#10094;</button>
+            
+            <div class="lightbox-card">
+                <div class="lightbox-image-wrapper">
+                    <img id="lightbox-img" src="" alt="Fotografía ampliada">
+                </div>
+                <div class="lightbox-caption">
+                    <span class="lightbox-date" id="lightbox-date"></span>
+                    <p class="lightbox-text" id="lightbox-text"></p>
+                    <span class="lightbox-counter" id="lightbox-counter"></span>
+                </div>
+            </div>
+
+            <button class="lightbox-nav next" id="lightbox-next" aria-label="Siguiente">&#10095;</button>
+        </div>
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
